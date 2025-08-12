@@ -1,0 +1,4 @@
+#+TITLE: Meshtastic Fleet Management Scripts
+
+This project provides a set of scripts and a Makefile to efficiently manage a fleet of Meshtastic nodes simultaneously. The primary interface is the `Makefile`, which offers simple commands like `make move_to_public` or `make move_to_kaleidoscope` to apply predefined configurations to all your remote-administered nodes at once. It utilizes a Python script, `meshtastic_all.py`, which reads a list of target node IDs from a `.env` file and sends the specified `meshtastic` CLI commands to each device. This system is ideal for quickly changing network settings, such as frequency slots and modem presets, or updating GPS reporting intervals across your entire Meshtastic network without having to configure each node individually.
+
